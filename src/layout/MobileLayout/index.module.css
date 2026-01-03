@@ -1,0 +1,22 @@
+.wrapper {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+@media (max-width: 420px) {
+  .wrapper {
+    width: 100%;
+    box-shadow: none;
+  }
+}

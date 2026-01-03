@@ -1,0 +1,66 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.screen h1 {
+  margin-bottom: 10px;
+}
+
+.screen p {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.otpInput {
+  width: 50px !important;
+  height: 50px !important;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.otpInput:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 12px 40px;
+  font-size: 16px;
+  background-color: #FF6D6A;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+  background-color: #FF6D6A;
+}
+
+.backbtn {
+    padding:10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6D6A;
+    border-radius: 10%;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    text-decoration: none;
+}
