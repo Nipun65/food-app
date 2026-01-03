@@ -9,7 +9,6 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [restaurants, setRestaurants] = useState<any[]>([]);
-  const [loading, setLoading] = useState(false);
   const images = [first, second, third, fourth];
   const navigate = useNavigate();
 
@@ -62,10 +61,6 @@ const Home = () => {
   const handleDetails = (r: any) => {
     navigate('/restaurant-detail', { state: { restaurant: r } });
   };
-
-  if (loading) {
-    return <div className={styles.loading}>Loading...</div>;
-  }
 
   return (
     <div className={styles.container}>
